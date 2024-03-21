@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Oswald:wght@200..700&family=Vast+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- -----HEADER-------- -->
+    <header class="header">
+        <input type="checkbox" class="header_checkbox" id="menuAbierto">
+        <label for="menuAbierto" class="header__open-nav-button" role="button">=</label>
+        <div class="header_logo-conteiner">
+            <img class="header_logo" src="instagram.png" alt="logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header_nav-list">
+                <li class="header_nav-item"><a href="#profile">Sobre Mi</a></li>
+                <li class="header_nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header_nav-item"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- -----MAIN-------- -->
+    <main class="profile" id="profile">
+        <div class="profile_wrapper">
+            <div class="profile_img-container">
+                <img src="n.jpg" alt="yo" class="profile_img">
+            </div>
+            <div class="profile_data-container">
+                <div class="profile-data">
+                    <div class="profile_description">
+                        <h1>¿Quién soy?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quas inventore. Exercitationem aut eaque facere quaerat magni vero cumque dolorum excepturi perferendis consectetur! Praesentium illo reiciendis, natus ducimus facere doloribus.</p>
+                    </div>
+                    <div class="profile_skills">
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li class="profile_skill">
+                                <div class="load-bar">
+                                    <div class="load-bar-bar bar--80">80%</div>
+                                </div>
+                                <span class="profile_skill-name">HTML</span>
+                            </li>
+                            <li class="profile_skill">
+                                <div class="load-bar">
+                                    <div class="load-bar-bar bar--80">80%</div>
+                                </div>
+                                <span class="profile_skill-name">CSS</span>
+                            </li>
+                            <li class="profile_skill">
+                                <div class="load-bar">
+                                    <div class="load-bar-bar bar--60">60%</div>
+                                </div>
+                                <span class="profile_skill-name">JavaScript</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- -----PORTFOLIO-------- -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio_title">Mi PORTFOLIO</h2>
+        <div class="portfolio_porject-container">
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">Proyecto</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">Proyecto</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">Proyecto</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">Proyecto</h2>
+            </div>
+        </div>
+    </section>
+      <!-- -----CONTACTO-------- -->
+    <section class="form" id="contact">
+        <h2 class="form_title">Contacto</h2>
+        <form class="form_form">
+            <div class="form_input-conatiner">
+                <label> Nombre
+                    <input type="text" placeholder="Jhon">
+                </label>
+            </div>
+            <div class="form_input-conatiner">
+                <label> Apellido
+                    <input type="text" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form_input-conatiner">
+                <label> Mail
+                    <input type="email" placeholder="tumail@ejemplo.com">
+                </label>
+            </div>
+            <div class="form_input-conatiner">
+                <label> Mensaje
+                    <textarea placeholder="Tu mensaje"></textarea>
+                </label>
+            </div>
+            <div class="form_input-conatiner">
+               <input type="submit">
+            </div>
+        </form>
+    </section>
+      <!-- -----FOOTER-------- -->
+      <footer>
+        PORTFOLIO Agustin Violante - Copyright 
+      </footer>
+</body>
+</html>
