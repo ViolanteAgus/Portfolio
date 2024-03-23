@@ -189,11 +189,12 @@ h1{
 }
 
 .bar--80{
-    width: 80%;
+    animation: rellenar80 4s both;
+
 }
 
 .bar--60{
-    width: 60%;
+    animation: rellenar60 4s both;
 }
 
 .profile_skill-name{
@@ -460,5 +461,23 @@ footer{
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes rellenar80{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes rellenar60{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
     }
 }
