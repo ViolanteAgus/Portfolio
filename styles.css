@@ -24,11 +24,10 @@ div, ul, nav, header, footer, a, li, label, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    container-type: inline-size;
-    container-name: header;
     position: relative;
     z-index: 10;
     text-align: center;
+    color: #48e;
 }
 
 .header__open-nav-button{
@@ -76,7 +75,7 @@ div, ul, nav, header, footer, a, li, label, body{
 }
 
 .header_nav-item a {
-    color: #48e;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -86,13 +85,24 @@ div, ul, nav, header, footer, a, li, label, body{
 
 
 /*-------HEADER QUERIES---------*/
-@container header (min-width: 600px) {
+@media screen and (min-width: 600px) {
+
+    .header{
+        padding: 20px 0;
+        animation: animacionHeader;
+        animation-timeline: scroll();
+        animation-range: 1px;
+        position: sticky;
+        top: 0;
+    }
+
     .header__nav{
         display: block;
         position: static;
         height: auto;
         width: auto;
         justify-content: space-between;
+        background-color:initial ;
     }
 
     .header_nav-list{
@@ -117,7 +127,7 @@ div, ul, nav, header, footer, a, li, label, body{
 .profile{
       container-name: profile;
       container-type: inline-size;/*Problema*/
-
+    animation: aparecer 2s -.6s both;
 }
 
 .profile_wrapper{
@@ -276,6 +286,9 @@ h1{
     place-content: center;
     box-shadow: 0px 0px 10px rgb(0, 0, 0) ;
     border-radius: 6px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: contain 5% cover 40%;
 }
 
 .portfolio_project:hover{
@@ -336,6 +349,9 @@ h1{
     max-width: 600px;
     width: 100%;
     display: grid;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5%  contain 35% ;
 }
 
 .form_input-conatiner :is(input,textarea){
@@ -422,4 +438,27 @@ footer{
     color: #fff;
     font-size: 22px;
 
+}
+
+
+/*-------ANIMACIONES---------*/
+
+@keyframes animacionHeader{
+    from{
+        padding:20px 0;
+    }
+    to{
+        padding:0;
+        background-color: #10163266;
+        color: #fff;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
