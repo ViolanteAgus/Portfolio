@@ -407,6 +407,9 @@ h1{
     .form_input-conatiner :is(input,textarea){
         box-shadow: none;
     }
+    .form_title{
+        font-size: 3.3rem;
+    }
 }
 
 
